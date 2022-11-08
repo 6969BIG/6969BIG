@@ -1,0 +1,697 @@
+local JNHHGaming = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextButton")
+local UIGradient = Instance.new("UIGradient")
+local TextLabel_2 = Instance.new("TextLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+
+JNHHGaming.Name = "JNHHGaming"
+JNHHGaming.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+JNHHGaming.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+JNHHGaming.ResetOnSpawn = false
+
+TextLabel.Parent = JNHHGaming
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-0.000772226602, 0, 0.0343558267, 0)
+TextLabel.Size = UDim2.new(0.180134634, 0, 0.0800389072, 0)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "JN HH Gaming Bedwars V3"
+TextLabel.TextColor3 = Color3.fromRGB(255,0,0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 28.000
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel.MouseButton1Down:Connect(function()
+	while true do wait() game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 23.3 end
+Walkspeed()
+end)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(126, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(209, 0, 0))}
+UIGradient.Parent = TextLabel
+
+TextLabel_2.Parent = TextLabel
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(-0.000772226602, 0, 0.77410934, 0)
+TextLabel_2.Size = UDim2.new(1.2, 0, 1.2, 0)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "Features are Killaura,Reach,Full Bright,Inf Jumps Speed - 23.3,No lag,wall climb,No Fall Damage,KillAura,BedBreaker,NoFall,ShopTierBypass"
+TextLabel_2.TextColor3 = Color3.fromRGB(1,1,1)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 24.000
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(126, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(209, 0, 0))}
+UIGradient_2.Parent = TextLabel_2
+
+UITextSizeConstraint.Parent = TextLabel_2
+UITextSizeConstraint.MaxTextSize = 24
+
+UITextSizeConstraint_2.Parent = TextLabel
+UITextSizeConstraint_2.MaxTextSize = 27
+
+
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    wait(1)
+    vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    wait(1)
+    vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+ 
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Bedwars Temporary Script";
+    Text = "Made by JN HH Gaming and Monia"; -- what the text says (ofc)
+    Duration = 15;
+})
+wait(1)
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Enjoy";
+    Text = "Don't Forget to Subscribe JN HH Gaming"; -- what the text says (ofc)
+    Duration = 30;
+})
+wait(1)
+game.StarterGui:SetCore("SendNotification", {
+    Title = " Also Join NightBed Discord";
+    Text = "https://discord.gg/k7zj7yfCrx"; -- what the text says (ofc)
+    Duration = 30;
+})
+
+-- Gui to Lua
+-- Version: 3.
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(39, 15, 245)
+Main.Position = UDim2.new(0.363293529, 0, 0.28638497, 0)
+Main.Size = UDim2.new(0, 300, 0, 154)
+Main.Style = Enum.FrameStyle.ChatRed
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(17, 1, 1)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.025588274, 0, -0.0890700519, 0)
+TextLabel.Size = UDim2.new(0, 250, 0, 30)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "JN HH Gaming Speed 23.3"
+TextLabel.TextColor3 = Color3.fromRGB(245, 16, 16)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 12.000
+TextLabel.TextWrapped = true
+
+TextButton.Parent = Main
+TextButton.BackgroundColor3 = Color3.fromRGB(17, 1, 1)
+TextButton.Position = UDim2.new(0.136470661, 0, 0.458670378, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 58)
+TextButton.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+TextButton.Font = Enum.Font.SciFi
+TextButton.Text = "Click To Activate"
+TextButton.TextColor3 = Color3.fromRGB(21, 235, 78)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:connect(function()
+ while true do wait() game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 23.3 end
+Walkspeed()
+end)
+-- Scripts:
+
+
+
+local function LASGYB_fake_script() -- ScreenGui.Script 
+	local script = Instance.new('Script', ScreenGui)
+
+	frame = script.Parent.Main -- Take out {}s, and put name of frame
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(LASGYB_fake_script)()
+
+local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+
+shared.enabled = w
+game:GetService("RunService").heartbeat:connect(function()
+if not shared.enabled then return end
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.GroundHit:FireServer(workspace.Map.Blocks,1645488277.345853)
+wait()
+end)
+
+--Made By JN HH Gaming
+
+game.Lighting.OutdoorAmbient = Color3.new(1,1,1)
+game.Lighting.Ambient = Color3.new(1,1,1)
+game.Lighting.OutdoorAmbient = Color3.new(1,0,0)
+game.Lighting.TimeOfDay = "12:00:00"
+game.Lighting.FogColor = Color3.new(0,0,0)
+game.Lighting.FogEnd = 1000
+print("Loaded!")
+
+local specialpos = (workspace.MapCFrames:FindFirstChild("center") and workspace.MapCFrames.center.Value.p == Vector3.new(77, 11, 35))
+                        if state then
+            local antivoidpart = Instance.new("Part", Workspace)
+            antivoidpart.Name = "AntiVoidV2"
+            antivoidpart.Size = Vector3.new(2100, 0.5, 2000)
+            antivoidpart.Position = Vector3.new(160.5, 25, 247.5)
+            antivoidpart.Transparency = 0.4
+            antivoidpart.Anchored = true
+            antivoidpart.Touched:connect(function(touchedvoid)
+                if touchedvoid.Parent:FindFirstChild("Humanoid") and touchedvoid.Parent.Name == lplr.Name then
+                    game.Players.LocalPlayer.Character.Humanoid:ChangeState("Jumping")
+                    wait(0.2)
+                    game.Players.LocalPlayer.Character.Humanoid:ChangeState("Jumping")
+                    wait(0.2)
+                    game.Players.LocalPlayer.Character.Humanoid:ChangeState("Jumping")
+                end
+            end)
+        else
+            if antivoidpart then
+			antivoidpart:Remove()
+			end
+        end
+        
+        _G.Settings = {
+		Players = {
+			["Ignore Me"] = true, -- Ignore your Character
+			["Ignore Others"] = true -- Ignore other Characters
+		},
+		Meshes = {
+			Destroy = false, -- Destroy Meshes
+			LowDetail = true -- Low detail meshes (NOT SURE IT DOES ANYTHING)
+		},
+		Images = {
+			Invisible = true, -- Invisible Images
+			LowDetail = false, -- Low detail images (NOT SURE IT DOES ANYTHING)
+			Destroy = false, -- Destroy Images
+		},
+		["No Particles"] = true, -- Disables all ParticleEmitter, Trail, Smoke, Fire and Sparkles
+		["No Camera Effects"] = true, -- Disables all PostEffect's (Camera/Lighting Effects)
+		["No Explosions"] = true, -- Makes Explosion's invisible
+		["No Clothes"] = true, -- Removes Clothing from the game
+		["Low Water Graphics"] = true, -- Removes Water Quality
+		["No Shadows"] = true, -- Remove Shadows
+		["Low Rendering"] = true, -- Lower Rendering
+		["Low Quality Parts"] = true -- Lower quality parts
+	}
+	local Players = game:GetService("Players")
+	local BadInstances = {"DataModelMesh", "FaceInstance", "ParticleEmitter", "Trail", "Smoke", "Fire", "Sparkles", "PostEffect", "Explosion", "Clothing", "BasePart"}
+	local CanBeEnabled = {"ParticleEmitter", "Trail", "Smoke", "Fire", "Sparkles", "PostEffect"}
+	local function PartOfCharacter(Instance)
+		for i, v in pairs(Players:GetPlayers()) do
+			if v.Character and Instance:IsDescendantOf(v.Character) then
+				return true
+			end
+		end
+		return false
+	end
+	local function ReturnDescendants()
+		local Descendants = {}
+		WaitNumber = 5000
+		if _G.Settings.Players["Ignore Others"] then
+			for i, v in pairs(game:GetDescendants()) do
+				if not v:IsDescendantOf(Players) and not PartOfCharacter(v) then
+					for i2, v2 in pairs(BadInstances) do
+						if v:IsA(v2) then
+							table.insert(Descendants, v)
+						end
+					end
+				end
+				if i == WaitNumber then
+					task.wait()
+					WaitNumber = WaitNumber + 5000
+				end
+			end
+		elseif _G.Settings.Players["Ignore Me"] then
+			for i, v in pairs(game:GetDescendants()) do
+				if not v:IsDescendantOf(Players) and not v:IsDescendantOf(ME.Character) then
+					for i2, v2 in pairs(BadInstances) do
+						if v:IsA(v2) then
+							table.insert(Descendants, v)
+						end
+					end
+				end
+				if i == WaitNumber then
+					task.wait()
+					WaitNumber = WaitNumber + 5000
+				end
+			end
+		end
+		return Descendants
+	end
+	local function CheckIfBad(Instance)
+		if not Instance:IsDescendantOf(Players) and not PartOfCharacter(Instance) then
+			if Instance:IsA("DataModelMesh") then
+				if _G.Settings.Meshes.LowDetail then
+					sethiddenproperty(Instance, "LODX", Enum.LevelOfDetailSetting.Low)
+					sethiddenproperty(Instance, "LODY", Enum.LevelOfDetailSetting.Low)
+				elseif _G.Settings.Meshes.Destroy then
+					Instance:Destroy()
+				end
+			elseif Instance:IsA("FaceInstance") then
+				if _G.Settings.Images.Invisible then
+					Instance.Transparency = 1
+				elseif _G.Settings.Images.LowDetail then
+					Instance.Shiny = 1
+				elseif _G.Settings.Images.Destroy then
+					Instance:Destroy()
+				end
+			elseif table.find(CanBeEnabled, Instance.ClassName) then
+				if _G.Settings["No Particles"] or (_G.Settings.Other and _G.Settings.Other["No Particles"]) then
+					Instance.Enabled = false
+				end
+			elseif Instance:IsA("Explosion") then
+				if _G.Settings["No Explosions"] or (_G.Settings.Other and _G.Settings.Other["No Explosions"]) then
+					Instance.Visible = false
+				end
+			elseif Instance:IsA("Clothing") then
+				if _G.Settings["No Clothes"] or (_G.Settings.Other and _G.Settings.Other["No Clothes"]) then
+					Instance:Destroy()
+				end
+			elseif Instance:IsA("BasePart") then
+				if _G.Settings["Low Quality Parts"] or (_G.Settings.Other and _G.Settings.Other["Low Quality Parts"]) then
+					Instance.Material = Enum.Material.Plastic
+					Instance.Reflectance = 0
+				end
+			end
+		end
+	end
+	if _G.Settings["Low Water Graphics"] or (_G.Settings.Other and _G.Settings.Other["Low Water Graphics"]) then
+		workspace:FindFirstChildOfClass("Terrain").WaterWaveSize = 0
+		workspace:FindFirstChildOfClass("Terrain").WaterWaveSpeed = 0
+		workspace:FindFirstChildOfClass("Terrain").WaterReflectance = 0
+		workspace:FindFirstChildOfClass("Terrain").WaterTransparency = 0
+	end
+	if _G.Settings["No Shadows"] or (_G.Settings.Other and _G.Settings.Other["No Shadows"]) then
+		game:GetService("Lighting").GlobalShadows = false
+		game:GetService("Lighting").FogEnd = 9e9
+	end
+	if _G.Settings["Low Rendering"] or (_G.Settings.Other and _G.Settings.Other["Low Rendering"]) then
+		settings().Rendering.QualityLevel = 1
+	end
+
+--Made By Monia (NTD)
+--local entity = loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/Libraries/entityHandler.lua", true))()
+local lplr = game.Players.LocalPlayer
+  local player = game:GetService("Players")
+  local cam = workspace.CurrentCamera
+  local uis = game:GetService("UserInputService")
+local KnitClient = debug.getupvalue(require(lplr.PlayerScripts.TS.knit).setup, 6)
+local Client = require(game:GetService("ReplicatedStorage").TS.remotes).default.Client
+local getremote = function(tab)
+    for i,v in pairs(tab) do
+        if v == "Client" then
+            return tab[i + 1]
+        end
+    end
+    return ""
+end
+local bedwars = {
+    ["SprintController"] = KnitClient.Controllers.SprintController,
+    ["ClientHandlerStore"] = require(lplr.PlayerScripts.TS.ui.store).ClientStore,
+    ["KnockbackUtil"] = require(game:GetService("ReplicatedStorage").TS.damage["knockback-util"]).KnockbackUtil,
+    ["PingController"] = require(lplr.PlayerScripts.TS.controllers.game.ping["ping-controller"]).PingController,
+    ["DamageIndicator"] = KnitClient.Controllers.DamageIndicatorController.spawnDamageIndicator,
+    ["SwordController"] = KnitClient.Controllers.SwordController,
+    ["ViewmodelController"] = KnitClient.Controllers.ViewmodelController,
+    ["SwordRemote"] = getremote(debug.getconstants((KnitClient.Controllers.SwordController).attackEntity)),
+	--["PaintRemote"] = getremote(debug.getconstants(KnitClient.Controllers.PaintShotgunController.fire)),
+}
+
+function isAlive(plr)
+    plr = plr or lplr
+    if not plr.Character then return false end
+    if not plr.Character:FindFirstChild("Head") then return false end
+    if not plr.Character:FindFirstChild("Humanoid") then return false end
+    return true
+end
+function canwalk(plr)
+    plr = plr or lplr
+    if not plr.Character then return false end
+    if not plr.Character:FindFirstChild("Humanoid") then return false end
+    local state = plr.Character:FindFirstChild("Humanoid"):GetState()
+    if state == Enum.HumanoidStateType.Dead then
+        return false
+    end
+    if state == Enum.HumanoidStateType.Ragdoll then
+        return false
+    end
+    return true
+end
+function getbeds()
+    local beds = {}
+    for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
+        if string.lower(v.Name) == "bed" and v:FindFirstChild("Covers") ~= nil and v:FindFirstChild("Covers").Color ~= lplr.Team.TeamColor then
+            table.insert(beds,v)
+        end
+    end
+    return beds
+end
+function getplayers()
+    local players = {}
+    for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+        if v.Team ~= lplr.Team and isAlive(v) and v.Character:FindFirstChild("Humanoid").Health > 0.11 then
+            table.insert(players,v)
+        end
+    end
+    return players
+end
+function getserverpos(Position)
+    local x = math.round(Position.X/3)
+    local y = math.round(Position.Y/3)
+    local z = math.round(Position.Z/3)
+    return Vector3.new(x,y,z)
+end
+function getnearestplayer(maxdist)
+    local obj = lplr
+    local dist = math.huge
+    for i,v in pairs(game:GetService("Players"):GetChildren()) do
+        if v.Team ~= lplr.Team and v ~= lplr and isAlive(v) and isAlive(lplr) then
+            local mag = (v.Character:FindFirstChild("HumanoidRootPart").Position - lplr.Character:FindFirstChild("HumanoidRootPart").Position).Magnitude
+            if (mag < dist) and (mag < maxdist) then
+                dist = mag
+                obj = v
+            end
+        end
+    end
+    return obj
+end
+function getmatchstate()
+	return bedwars["ClientHandlerStore"]:getState().Game.matchState
+end
+function getqueuetype()
+    local state = bedwars["ClientHandlerStore"]:getState()
+    return state.Game.queueType or "bedwars_test"
+end
+function getitem(itm)
+    if isAlive(lplr) and lplr.Character:FindFirstChild("InventoryFolder").Value:FindFirstChild(itm) then
+        return true
+    end
+    return false
+end
+function Cape(char, texture)
+    for i,v in pairs(char:GetDescendants()) do
+        if v.Name == "Cape" then
+            v:Remove()
+        end
+    end
+    local hum = char:WaitForChild("Humanoid")
+    if char:FindFirstChild("Torso") then
+        torso = char.Torso
+    else
+        torso = char.UpperTorso
+    end
+    local p = Instance.new("Part", torso.Parent)
+    p.Name = "Cape"
+    p.Anchored = false
+    p.CanCollide = false
+    p.TopSurface = 0
+    p.BottomSurface = 0
+    p.FormFactor = "Custom"
+    p.Size = Vector3.new(0.2,0.2,0.2)
+    p.Transparency = 1
+    local decal = Instance.new("Decal", p)
+    decal.Texture = texture
+    decal.Face = "Back"
+    local msh = Instance.new("BlockMesh", p)
+    msh.Scale = Vector3.new(9,17.5,0.5)
+    local motor = Instance.new("Motor", p)
+    motor.Part0 = p
+    motor.Part1 = torso
+    motor.MaxVelocity = 0.01
+    motor.C0 = CFrame.new(0,2,0) * CFrame.Angles(0,math.rad(90),0)
+    motor.C1 = CFrame.new(0,1,0.45) * CFrame.Angles(0,math.rad(90),0)
+    local wave = false
+    repeat wait(1/44)
+        decal.Transparency = torso.Transparency
+        local ang = 0.1
+        local oldmag = torso.Velocity.magnitude
+        local mv = 0.002
+        if wave then
+            ang = ang + ((torso.Velocity.magnitude/10) * 0.05) + 0.05
+            wave = false
+        else
+            wave = true
+        end
+        ang = ang + math.min(torso.Velocity.magnitude/11, 0.5)
+        motor.MaxVelocity = math.min((torso.Velocity.magnitude/111), 0.04) --+ mv
+        motor.DesiredAngle = -ang
+        if motor.CurrentAngle < -0.2 and motor.DesiredAngle > -0.2 then
+            motor.MaxVelocity = 0.04
+        end
+        repeat wait() until motor.CurrentAngle == motor.DesiredAngle or math.abs(torso.Velocity.magnitude - oldmag) >= (torso.Velocity.magnitude/10) + 1
+        if torso.Velocity.magnitude < 0.1 then
+            wait(0.1)
+        end
+    until not p or p.Parent ~= torso.Parent
+end
+lplr.CharacterAdded:Connect(function(char)
+					spawn(function()
+						pcall(function() 
+							Cape(char, ("http://www.roblox.com/asset/?id=9685546949"))
+						end)
+					end)
+				end)
+				if lplr.Character then
+					spawn(function()
+						pcall(function() 
+							Cape(lplr.Character, ("http://www.roblox.com/asset/?id=9685546949"))
+						end)
+					end)
+				end
+local CombatConstant = require(game:GetService("ReplicatedStorage").TS.combat["combat-constant"]).CombatConstant
+CombatConstant.RAYCAST_SWORD_CHARACTER_DISTANCE = 18
+local old
+local VeloKnock = true
+if VeloKnock then
+    old = bedwars["KnockbackUtil"].applyKnockback
+    bedwars["KnockbackUtil"].applyKnockback = function() 
+    end
+    local Falling = false
+    if Falling then
+        spawn(function()
+            repeat
+                task.wait(0.5)
+                Client:Get("GroundHit"):SendToServer()
+            until not Falling
+        end)
+    end
+    local BedwarsSwords = require(game:GetService("ReplicatedStorage").TS.games.bedwars["bedwars-swords"]).BedwarsSwords
+    function hashFunc(vec) 
+        return {value = vec}
+    end
+    local function GetInventory(plr)
+        if not plr then 
+            return {items = {}, armor = {}}
+        end
+
+        local suc, ret = pcall(function() 
+            return require(game:GetService("ReplicatedStorage").TS.inventory["inventory-util"]).InventoryUtil.getInventory(plr)
+        end)
+
+        if not suc then 
+            return {items = {}, armor = {}}
+        end
+
+        if plr.Character and plr.Character:FindFirstChild("InventoryFolder") then 
+            local invFolder = plr.Character:FindFirstChild("InventoryFolder").Value
+            if not invFolder then return ret end
+            for i,v in next, ret do 
+                for i2, v2 in next, v do 
+                    if typeof(v2) == 'table' and v2.itemType then
+                        v2.instance = invFolder:FindFirstChild(v2.itemType)
+                    end
+                end
+                if typeof(v) == 'table' and v.itemType then
+                    v.instance = invFolder:FindFirstChild(v.itemType)
+                end
+            end
+        end
+
+        return ret
+    end
+    local function getSword()
+        local highest, returning = -9e9, nil
+        for i,v in next, GetInventory(lplr).items do 
+            local power = table.find(BedwarsSwords, v.itemType)
+            if not power then continue end
+            if power > highest then 
+                returning = v
+                highest = power
+            end
+        end
+        return returning
+    end 
+    local HitRemote = Client:Get(bedwars["SwordRemote"])
+    local Distance = {["Value"] = 18}
+    local Aurz = true
+    if Aurz then
+        spawn(function()
+            repeat
+                task.wait(0.12)
+                local nearest = getnearestplayer(Distance["Value"])
+                if nearest ~= nil and nearest.Team ~= lplr.Team and isAlive(nearest) and nearest.Character:FindFirstChild("Humanoid").Health > 0.1 and isAlive(lplr) and lplr.Character:FindFirstChild("Humanoid").Health > 0.1 and not nearest.Character:FindFirstChild("ForceField") then
+                    local sword = getSword()
+                    spawn(function()
+                        local anim = Instance.new("Animation")
+                        anim.AnimationId = "rbxassetid://4947108314"
+                        local animator = lplr.Character:FindFirstChild("Humanoid"):FindFirstChild("Animator")
+                        animator:LoadAnimation(anim):Play()
+                        anim:Destroy()
+                        bedwars["ViewmodelController"]:playAnimation(15)
+                    end)
+                    if sword ~= nil then
+                        bedwars["SwordController"].lastAttack = game:GetService("Workspace"):GetServerTimeNow() - 0.11
+                        HitRemote:SendToServer({
+                            ["weapon"] = sword.tool,
+                            ["entityInstance"] = nearest.Character,
+                            ["validate"] = {
+                                ["raycast"] = {
+                                    ["cameraPosition"] = hashFunc(cam.CFrame.Position),
+                                    ["cursorDirection"] = hashFunc(Ray.new(cam.CFrame.Position, nearest.Character:FindFirstChild("HumanoidRootPart").Position).Unit.Direction)
+                                },
+                                ["targetPosition"] = hashFunc(nearest.Character:FindFirstChild("HumanoidRootPart").Position),
+                                ["selfPosition"] = hashFunc(lplr.Character:FindFirstChild("HumanoidRootPart").Position + ((lplr.Character:FindFirstChild("HumanoidRootPart").Position - nearest.Character:FindFirstChild("HumanoidRootPart").Position).magnitude > 14 and (CFrame.lookAt(lplr.Character:FindFirstChild("HumanoidRootPart").Position, nearest.Character:FindFirstChild("HumanoidRootPart").Position).LookVector * 4) or Vector3.new(0, 0, 0)))
+                            },
+                            ["chargedAttack"] = {["chargeRatio"] = 0.8}
+                        })
+                    end
+                end
+            until not Aurz
+        end)
+    end
+local Falling = true
+if Falling then
+                spawn(function()
+                    repeat
+                        task.wait(0.5)
+                        Client:Get("GroundHit"):SendToServer()
+                    until not Falling
+                end)
+            end
+
+    local shopfunction = debug.getupvalue(require(game:GetService("ReplicatedStorage").TS.games.bedwars.shop["bedwars-shop"]).BedwarsShop.getShopItem, 2)
+local oldnexttier
+local oldtiered
+local shoptier = true
+if shoptier then
+    for i,v in pairs(shopfunction) do
+        oldtiered = oldtiered or v.tiered
+        oldnexttier = oldnexttier or v.nextTier
+    end
+    for i,v in pairs(shopfunction) do
+        v.tiered = nil
+        v.nextTier = nil
+    end
+end
+--[[
+local Distance = {["Value"] = 30}
+local Breaker = true
+if Breaker then
+    spawn(function()
+        repeat
+            task.wait(0.1)
+            if isAlive(lplr) and lplr.Character:FindFirstChild("Humanoid").Health > 0.1 then
+                local beds = getbeds()
+                for i,v in pairs(beds) do
+                    local mag = (v.Position - lplr.Character:FindFirstChild("HumanoidRootPart").Position).Magnitude
+                    if mag < Distance["Value"] then
+                        game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("@rbxts").net.out._NetManaged.DamageBlock:InvokeServer({
+                            ["blockRef"] = {
+                                ["blockPosition"] = getserverpos(v.Position)
+                            },
+                            ["hitPosition"] = getserverpos(v.Position),
+                            ["hitNormal"] = getserverpos(v.Position)
+                        })
+                    end
+                end
+            end
+        until not Breaker
+    end)
+end
+end
+--]]
+local BreakingMsg = true
+    local params = RaycastParams.new()
+    params.IgnoreWater = true
+    function NukerFunction(part)
+        local raycastResult = game:GetService("Workspace"):Raycast(part.Position + Vector3.new(0,24,0),Vector3.new(0,-27,0),params)
+        if raycastResult then
+            local targetblock = raycastResult.Instance
+            for i,v in pairs(targetblock:GetChildren()) do
+                if v:IsA("Texture") then
+                    v:Destroy()
+                end
+            end
+            targetblock.Color = Color3.fromRGB(255,65,65)
+            targetblock.Material = Enum.Material.Neon
+            game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("@rbxts").net.out._NetManaged.DamageBlock:InvokeServer({
+                ["blockRef"] = {
+                    ["blockPosition"] = Vector3.new(math.round(targetblock.Position.X/3),math.round(targetblock.Position.Y/3),math.round(targetblock.Position.Z/3))
+                },
+                ["hitPosition"] = Vector3.new(math.round(targetblock.Position.X/3),math.round(targetblock.Position.Y/3),math.round(targetblock.Position.Z/3)),
+                ["hitNormal"] = Vector3.new(math.round(targetblock.Position.X/3),math.round(targetblock.Position.Y/3),math.round(targetblock.Position.Z/3))
+            })
+            if BreakingMsg == false then
+                BreakingMsg = true
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "Breaking";
+                    Text = "Bed Are Start Break"; -- what the text says (ofc)
+                    Duration = 60;
+                })
+                spawn(function()
+                    task.wait(3)
+                    BreakingMsg = false
+                end)
+            end
+        end
+    end
+    local BreakerX = true
+    local Distance = {["Value"] = 30}
+            if BreakerX then
+                spawn(function()
+                    while task.wait(0.1) do
+                        if not BreakerX then return end
+                        spawn(function()
+                            if lplr:GetAttribute("DenyBlockBreak") == true then
+                                lplr:SetAttribute("DenyBlockBreak",nil)
+                            end
+                        end)
+                        if isAlive(lplr) then
+                            local beds = getbeds()
+                            for i,v in pairs(beds) do
+                                local mag = (v.Position - lplr.Character.PrimaryPart.Position).Magnitude
+                                if mag < Distance["Value"] then
+                                    NukerFunction(v)
+                                end
+                            end
+                        end
+                    end
+                end)
+            end
+        end
